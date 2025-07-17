@@ -1,0 +1,68 @@
+.panel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.bell-btn {
+  background: none;
+  border: none;
+  color: var(--color-primary, #6C8AE4);
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: relative;
+}
+.notif-count {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: #ff7597;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  padding: 2px 6px;
+}
+.overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.2);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid {
+  background: var(--color-bg, #fff);
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+  padding: 2rem;
+  min-width: 320px;
+  max-width: 90vw;
+  position: relative;
+}
+.notif-close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #888;
+  cursor: pointer;
+}
+.notifGrid {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.notif-item.unread {
+  font-weight: bold;
+  color: var(--color-primary, #6C8AE4);
+}
+@media (max-width: 600px) {
+  .grid {
+    padding: 1rem;
+    min-width: 220px;
+  }
+} 

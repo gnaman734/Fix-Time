@@ -9,6 +9,7 @@ import AppointmentPage from './pages/AppointmentPage';
 import Dashboard from './pages/Dashboard';
 import UserProfile from './pages/UserProfile';
 import Navbar from './components/Navbar';
+import Sidebar from './components/MyServices/Sidebar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import ProviderHomePage from './pages/ProviderHomePage';
